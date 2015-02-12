@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" promptOnLocalOverwrite="false" uploadOnCheckin="16e48a71-b34d-4e9d-bbb8-3cdb81306f83">
+    <serverData>
+      <paths name="webdb">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/stockwin" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="webdb" />
+  </component>
+</project>

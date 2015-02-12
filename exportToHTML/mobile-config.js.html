@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>mobile-config.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { }
+.s1 { color: rgb(0,128,0); font-weight: bold; }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+mobile-config.js</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">App.info({ 
+  name: </span><span class="s1">'Todos'</span><span class="s0">, 
+  description: </span><span class="s1">'A simple todo list app built in Meteor.'</span><span class="s0">, 
+  author: </span><span class="s1">'Percolate Studio Team'</span><span class="s0">, 
+  email: </span><span class="s1">'us@percolatestudio.com'</span><span class="s0">, 
+  website: </span><span class="s1">'http://percolatestudio.com'</span><span class="s0">, 
+  version: </span><span class="s1">'0.0.1'</span><span class="s0"> 
+}); 
+ 
+App.icons({ 
+  </span><span class="s2">// iOS</span><span class="s0"> 
+  </span><span class="s1">'iphone'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-60x60.png'</span><span class="s0">, 
+  </span><span class="s1">'iphone_2x'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-60x60@2x.png'</span><span class="s0">, 
+  </span><span class="s1">'ipad'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-72x72.png'</span><span class="s0">, 
+  </span><span class="s1">'ipad_2x'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-72x72@2x.png'</span><span class="s0">, 
+ 
+  </span><span class="s2">// Android</span><span class="s0"> 
+  </span><span class="s1">'android_ldpi'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-36x36.png'</span><span class="s0">, 
+  </span><span class="s1">'android_mdpi'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-48x48.png'</span><span class="s0">, 
+  </span><span class="s1">'android_hdpi'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-72x72.png'</span><span class="s0">, 
+  </span><span class="s1">'android_xhdpi'</span><span class="s0">: </span><span class="s1">'resources/icons/icon-96x96.png'</span><span class="s0"> 
+}); 
+ 
+App.launchScreens({ 
+  </span><span class="s2">// iOS</span><span class="s0"> 
+  </span><span class="s1">'iphone'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-320x480.png'</span><span class="s0">, 
+  </span><span class="s1">'iphone_2x'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-320x480@2x.png'</span><span class="s0">, 
+  </span><span class="s1">'iphone5'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-320x568@2x.png'</span><span class="s0">, 
+  </span><span class="s1">'ipad_portrait'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-768x1024.png'</span><span class="s0">, 
+  </span><span class="s1">'ipad_portrait_2x'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-768x1024@2x.png'</span><span class="s0">, 
+  </span><span class="s1">'ipad_landscape'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-1024x768.png'</span><span class="s0">, 
+  </span><span class="s1">'ipad_landscape_2x'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-1024x768@2x.png'</span><span class="s0">, 
+ 
+  </span><span class="s2">// Android</span><span class="s0"> 
+  </span><span class="s1">'android_ldpi_portrait'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-200x320.png'</span><span class="s0">, 
+  </span><span class="s1">'android_ldpi_landscape'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-320x200.png'</span><span class="s0">, 
+  </span><span class="s1">'android_mdpi_portrait'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-320x480.png'</span><span class="s0">, 
+  </span><span class="s1">'android_mdpi_landscape'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-480x320.png'</span><span class="s0">, 
+  </span><span class="s1">'android_hdpi_portrait'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-480x800.png'</span><span class="s0">, 
+  </span><span class="s1">'android_hdpi_landscape'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-800x480.png'</span><span class="s0">, 
+  </span><span class="s1">'android_xhdpi_portrait'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-720x1280.png'</span><span class="s0">, 
+  </span><span class="s1">'android_xhdpi_landscape'</span><span class="s0">: </span><span class="s1">'resources/splash/splash-1280x720.png'</span><span class="s0"> 
+}); 
+ 
+App.setPreference(</span><span class="s1">'StatusBarOverlaysWebView'</span><span class="s0">, </span><span class="s1">'false'</span><span class="s0">); 
+App.setPreference(</span><span class="s1">'StatusBarBackgroundColor'</span><span class="s0">, </span><span class="s1">'#000000'</span><span class="s0">); 
+ 
+</span></pre>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<template name="join">
+  <div class="page auth">
+    <nav>
+      <div class="nav-group">
+        <a href="#" class="js-menu nav-item"><span class="icon-list-unordered"></span></a>
+      </div>
+    </nav>
+
+    <div class="content-scrollable">
+      <div class="wrapper-auth">
+        <h1 class="title-auth">加入會員</h1>
+        <p class="subtitle-auth" >加入會員後可看到更多功能</p>
+
+        <form>
+          {{#if errorMessages}}
+            <div class="list-errors">
+              {{#each errorMessages}}
+                <div class="list-item">{{this}}</div>
+              {{/each}}
+            </div>
+          {{/if}}
+
+          <div class="input-symbol  {{errorClass 'email'}}">
+            <input type="email" name="email" placeholder="輸入你的Email" />
+            <span class="icon-email" title="Your Email"></span>
+          </div>
+
+          <div class="input-symbol  {{errorClass 'password'}}">
+            <input type="password" name="password" placeholder="輸入密碼" />
+            <span class="icon-lock" title="Password"></span>
+          </div>
+
+          <div class="input-symbol {{errorClass 'confirm'}}">
+            <input type="password" name="confirm" placeholder="再次輸入密碼" />
+            <span class="icon-lock" title="Confirm Password"></span>
+          </div>
+
+          <button type="submit" class="btn-primary">加入會員</button>
+        </form>
+      </div>
+
+      <a href="{{pathFor 'signin'}}" class="link-auth-alt">已經是會員? 請登入</a>
+    </div>
+  </div>
+</template>
