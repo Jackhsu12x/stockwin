@@ -9,3 +9,6 @@ insecure
 less
 iron:router@0.9.4
 accounts-password
+accounts-facebook
+service-configuration
+accounts-google

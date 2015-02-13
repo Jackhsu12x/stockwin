@@ -61,6 +61,9 @@ Template.appBody.helpers({
   menuOpen: function() {
     return Session.get(MENU_KEY) && 'menu-open';
   },
+  userName: function() {
+   return Meteor.user().username || Meteor.user().profile.name;
+   },
   cordova: function() {
     return Meteor.isCordova && 'cordova';
   },
@@ -103,7 +106,7 @@ Template.appBody.events({
     Session.set(USER_MENU_KEY, ! Session.get(USER_MENU_KEY));
     // stop the menu from closing
     event.stopImmediatePropagation();
-  },
+  } ,
 
   'click #menu a': function() {
     Session.set(MENU_KEY, false);

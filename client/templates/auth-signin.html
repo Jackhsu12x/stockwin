@@ -10,31 +10,9 @@
       <div class="wrapper-auth">
         <h1 class="title-auth">登入</h1>
         <p class="subtitle-auth" >登入後可看到更多功能</p>
-
-        <form>
-          {{#if errorMessages}}
-            <div class="list-errors">
-              {{#each errorMessages}}
-                <div class="list-item">{{this}}</div>
-              {{/each}}
-            </div>
-          {{/if}}
-
-          <div class="input-symbol {{errorClass 'email'}}">
-            <input type="email" name="email" placeholder="輸入Email" />
-            <span class="icon-email" title="Your Email"></span>
-          </div>
-
-          <div class="input-symbol {{errorClass 'password'}}">
-            <input type="password" name="password" placeholder="輸入密碼" />
-            <span class="icon-lock" title="Password"></span>
-          </div>
-
-          <button type="submit" class="btn-primary">登入</button>
-        </form>
+          <button id="facebook-login"  class="btn-primary">由Facebook登入</button>
+          <button id="google-login"  class="btn-primary">由Google登入</button>
       </div>
-
-      <a href="{{pathFor 'join'}}" class="link-auth-alt">還沒有帳號嗎? 按我加入會員吧!</a>
     </div>
   </div>
 </template>

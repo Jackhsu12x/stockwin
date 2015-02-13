@@ -4,22 +4,11 @@
     <section id="menu">
       {{#if currentUser}}
         <div class="btns-group-vertical">
-          <a href="#" class="js-user-menu btn-secondary">
-            {{#if userMenuOpen}}
-              <span class="icon-arrow-up"></span>
-              {{else}}
-              <span class="icon-arrow-down"></span>
-            {{/if}}
-            {{emailLocalPart}}
-          </a>
-          {{#if userMenuOpen}}
-            <a class="js-logout btn-secondary">登出</a>
-          {{/if}}
+            <a class="js-logout btn-secondary">嗨~{{userName}}! 登出</a>
         </div>
       {{else}}
         <div class="btns-group">
           <a href="{{pathFor 'signin'}}" class="btn-secondary">登入</a>
-          <a href="{{pathFor 'join'}}" class="btn-secondary">加入會員</a>
         </div>
       {{/if}}
 
